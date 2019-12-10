@@ -14,7 +14,8 @@ usage: $0 <options>
   -h host
   -u user
   -p password
-  -P port
+  -P port (defaults to 22)
+  -t timeout (defaults to 4 seconds)
 EOF
 exit 3
 }
@@ -27,6 +28,7 @@ do
     p) password=$OPTARG;;
     h) host=$OPTARG;;
     P) port=$OPTARG;;
+    t) timeout=$OPTARG;;
     *) usage;;
   esac
 done
