@@ -20,7 +20,7 @@ EOF
 exit 3
 }
 
-while getopts 'u:p:h:P:' OPTION
+while getopts 'u:p:h:P:t:' OPTION
 do
   case $OPTION in
 
