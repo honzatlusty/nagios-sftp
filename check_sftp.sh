@@ -39,7 +39,7 @@ fi
 
 which lftp &>/dev/null || { echo 'You need to have lftp installed.'; exit 3; }
 
-timeout $timeout lftp -u ${user},${password} sftp://${host}:${port} <<EOF > /dev/null
+timeout $timeout lftp -u "${user},${password}" sftp://${host}:${port} <<EOF > /dev/null
 ls
 bye
 EOF
